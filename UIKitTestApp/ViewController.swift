@@ -65,6 +65,10 @@ class ViewController: UIViewController {
     }
     
     @IBAction func datePickerAction() {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateStyle = .medium
+        dateFormatter.locale = Locale(identifier: "ru_RU")
+        messageLabel.text = dateFormatter.string(from: datePicker.date)
     }
 }
 
