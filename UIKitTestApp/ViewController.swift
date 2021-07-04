@@ -37,8 +37,21 @@ class ViewController: UIViewController {
     }
 
     @IBAction func segmentedControlAction() {
+        switch segmentedControl.selectedSegmentIndex {
+        case 0:
+            messageLabel.text = "The first segment is selected"
+            messageLabel.textColor = .red
+        case 1:
+            messageLabel.text = "The second segment is selected"
+            messageLabel.textColor = .blue
+        case 2:
+            messageLabel.text = "The third segment is selected"
+            messageLabel.textColor = .yellow
+        default: break
+        }
     }
     @IBAction func sliderAction() {
+        
     }
     
     @IBAction func doneButtonPressed(_ sender: UIButton) {
