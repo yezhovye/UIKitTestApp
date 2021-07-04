@@ -34,13 +34,16 @@ class ViewController: UIViewController {
         messageLabel.text = String(slider.value)
         
         datePicker.locale = Locale(identifier: "ru_RU")
-        
-        
-        
     }
 
-
+    @IBAction func segmentedControlAction() {
+    }
+    @IBAction func sliderAction() {
+    }
+    
     @IBAction func doneButtonPressed(_ sender: UIButton) {
+    }
+    @IBAction func datePickerAction() {
     }
 }
 

@@ -25,6 +25,9 @@
                                             <segment title="First"/>
                                             <segment title="Second"/>
                                         </segments>
+                                        <connections>
+                                            <action selector="segmentedControlAction" destination="BYZ-38-t0r" eventType="valueChanged" id="TpW-37-G6p"/>
+                                        </connections>
                                     </segmentedControl>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VcN-MQ-uis">
                                         <rect key="frame" x="0.0" y="71" width="382" height="20.5"/>
@@ -34,6 +37,9 @@
                                     </label>
                                     <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="RvJ-EU-s2S">
                                         <rect key="frame" x="-2" y="131.5" width="386" height="31"/>
+                                        <connections>
+                                            <action selector="sliderAction" destination="BYZ-38-t0r" eventType="valueChanged" id="GNC-p9-Zoq"/>
+                                        </connections>
                                     </slider>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Enter your name" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eha-FP-Lh5">
                                         <rect key="frame" x="0.0" y="201.5" width="382" height="34"/>
@@ -49,6 +55,9 @@
                                     </button>
                                     <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="zCq-ha-opd">
                                         <rect key="frame" x="0.0" y="345.5" width="382" height="216"/>
+                                        <connections>
+                                            <action selector="datePickerAction" destination="BYZ-38-t0r" eventType="valueChanged" id="2hr-4T-CIO"/>
+                                        </connections>
                                     </datePicker>
                                 </subviews>
                             </stackView>
