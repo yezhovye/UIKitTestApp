@@ -51,7 +51,9 @@ class ViewController: UIViewController {
         }
     }
     @IBAction func sliderAction() {
-        
+        messageLabel.text = String(slider.value)
+        let sliderValue = CGFloat(slider.value)
+        view.backgroundColor = view.backgroundColor?.withAlphaComponent(sliderValue)
     }
     
     @IBAction func doneButtonPressed(_ sender: UIButton) {
