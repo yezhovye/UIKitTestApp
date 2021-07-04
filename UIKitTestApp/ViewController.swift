@@ -56,9 +56,25 @@ class ViewController: UIViewController {
         view.backgroundColor = view.backgroundColor?.withAlphaComponent(sliderValue)
     }
     
-    @IBAction func doneButtonPressed(_ sender: UIButton) {
+    @IBAction func doneButtonPressed() {
+        guard let inputText = textField.text, !inputText.isEmpty else {
+                showAlert(with: "Wrong format", and: "Please enter your name")
+            return
+        }
+        messageLabel.text = inputText
     }
+    
     @IBAction func datePickerAction() {
     }
 }
 
+extension ViewController {
+    private func showAlert(with title: String, and message: String) {
+        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        let okAction = UIAlertAction(title: "Ok", style: .default) { _ in
+            self.textField.text = ""
+        }
+        alert.addAction(okAction)
+        present(alert, animated: true)
+    }
+}
